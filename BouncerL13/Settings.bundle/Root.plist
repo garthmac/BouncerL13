@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Elasticity</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<real>0.85</real>
+			<key>Key</key>
+			<string>BouncerBehavior.Elasticity</string>
+			<key>MaximumValue</key>
+			<real>1.1</real>
+			<key>MaximumValueImage</key>
+			<string></string>
+			<key>MinimumValue</key>
+			<real>0.5</real>
+			<key>MinimumValueImage</key>
+			<string></string>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Preferred Video</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>AutocapitalizationType</key>
+			<string>AllCharacters</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>DefaultValue</key>
+			<string>C</string>
+			<key>IsSecure</key>
+			<false/>
+			<key>Key</key>
+			<string>BouncerViewController.FavVideo</string>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>Title</key>
+			<string>( eg. C )</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Random Block Color</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>BouncerViewController.isRandomColor</string>
+			<key>Title</key>
+			<string>Enabled</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

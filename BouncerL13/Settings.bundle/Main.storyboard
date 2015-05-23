@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VDa-lc-g3f">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Bouncer View Controller-->
+        <scene sceneID="ZQF-Rr-Ahg">
+            <objects>
+                <viewController id="VDa-lc-g3f" customClass="BouncerViewController" customModule="BouncerL13" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bxh-HT-uDR"/>
+                        <viewControllerLayoutGuide type="bottom" id="hvz-Qi-HEm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bec-qa-v8n">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8gH-rq-A50">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8gH-rq-A50" firstAttribute="top" secondItem="Bec-qa-v8n" secondAttribute="top" id="DI8-gW-Ojw"/>
+                            <constraint firstAttribute="trailing" secondItem="8gH-rq-A50" secondAttribute="trailing" id="FTc-ms-Vcr"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="8gH-rq-A50" secondAttribute="trailing" constant="32" id="I8M-ej-pYx"/>
+                            <constraint firstItem="8gH-rq-A50" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="hvz-Qi-HEm" secondAttribute="top" constant="-280" id="RGR-po-0jP"/>
+                            <constraint firstItem="8gH-rq-A50" firstAttribute="bottom" secondItem="hvz-Qi-HEm" secondAttribute="top" id="ktd-FU-ztc"/>
+                            <constraint firstItem="8gH-rq-A50" firstAttribute="leading" secondItem="Bec-qa-v8n" secondAttribute="leading" id="xBT-IA-mgb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="I8M-ej-pYx"/>
+                                <exclude reference="RGR-po-0jP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="bouncerView" destination="8gH-rq-A50" id="gkV-CI-5Nc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFK-LM-MgQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="326"/>
+        </scene>
+    </scenes>
+</document>
