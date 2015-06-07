@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8gH-rq-A50">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="-8" width="600" height="616"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -26,11 +26,14 @@
                             <constraint firstAttribute="trailing" secondItem="8gH-rq-A50" secondAttribute="trailing" id="FTc-ms-Vcr"/>
                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="8gH-rq-A50" secondAttribute="trailing" constant="32" id="I8M-ej-pYx"/>
                             <constraint firstItem="8gH-rq-A50" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="hvz-Qi-HEm" secondAttribute="top" constant="-280" id="RGR-po-0jP"/>
-                            <constraint firstItem="8gH-rq-A50" firstAttribute="bottom" secondItem="hvz-Qi-HEm" secondAttribute="top" id="ktd-FU-ztc"/>
+                            <constraint firstItem="8gH-rq-A50" firstAttribute="bottom" secondItem="hvz-Qi-HEm" secondAttribute="top" constant="8" symbolic="YES" id="ktd-FU-ztc"/>
+                            <constraint firstAttribute="centerY" secondItem="8gH-rq-A50" secondAttribute="centerY" id="lEY-rm-01a"/>
+                            <constraint firstAttribute="centerX" secondItem="8gH-rq-A50" secondAttribute="centerX" id="qmD-NS-j3G"/>
                             <constraint firstItem="8gH-rq-A50" firstAttribute="leading" secondItem="Bec-qa-v8n" secondAttribute="leading" id="xBT-IA-mgb"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="DI8-gW-Ojw"/>
                                 <exclude reference="I8M-ej-pYx"/>
                                 <exclude reference="RGR-po-0jP"/>
                             </mask>
