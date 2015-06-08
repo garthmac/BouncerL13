@@ -15,13 +15,25 @@ class BouncerBehavior: UIDynamicBehavior {
     lazy var collider: UICollisionBehavior = {
         let lazyCreatedCollider = UICollisionBehavior()
         lazyCreatedCollider.translatesReferenceBoundsIntoBoundary = true
+            lazyCreatedCollider.action = {
+                for block in self.blocks {
+                    if !CGRectIntersectsRect(self.dynamicAnimator!.referenceView!.bounds, block.frame) {
+                        self.removeDrop(block)
+                    }
+                }
+            }
         return lazyCreatedCollider
         }()
-    
+    var blocks:[UIView] {
+        get {
+            return collider.items.filter{$0 is UIView}.map{$0 as! UIView}
+        }
+    }
     lazy var dropBehavior: UIDynamicItemBehavior = {
         let lazyCreatedDropBehavior = UIDynamicItemBehavior()
         lazyCreatedDropBehavior.allowsRotation = true
         lazyCreatedDropBehavior.elasticity = CGFloat(NSUserDefaults.standardUserDefaults().doubleForKey("BouncerBehavior.Elasticity"))
+        //println(lazyCreatedDropBehavior.elasticity)
         lazyCreatedDropBehavior.friction = 0
         lazyCreatedDropBehavior.resistance = 0
         //(should really remove observer...like Trax) see Settings.bundle - Root.plist

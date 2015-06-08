@@ -23,6 +23,9 @@ class BouncerViewController: UIViewController {
         }
         return String.random
     }()
+    lazy var repeatVideo: Bool = {
+        return NSUserDefaults.standardUserDefaults().boolForKey("BouncerViewController.RepeatVideo")
+        }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +39,8 @@ class BouncerViewController: UIViewController {
         case "B": return BouncerViewController.Videos.B
         case "C": return BouncerViewController.Videos.C
         case "D": return BouncerViewController.Videos.D
-        default: return BouncerViewController.Videos.E
+        case "E": return BouncerViewController.Videos.E
+        default: return BouncerViewController.Videos.C
         }
     }
     
@@ -47,10 +51,8 @@ class BouncerViewController: UIViewController {
         if let player = self.moviePlayer {
             player.view.frame = bouncerView.frame
             var model = UIDevice.currentDevice().model
-//            println("\(model)")
-//            println("\(bouncerView.frame)")
             if model.hasPrefix("iPad") {
-                player.view.frame.size = CGSize(width: 1022, height: 800)
+                player.view.frame.size = CGSize(width: 1024, height: 800)
             } else {
                 player.view.center = CGPoint(x: bouncerView.bounds.midX, y: bouncerView.bounds.midY/2)
                 // midY/2 is a compromize for iPhones
@@ -60,16 +62,18 @@ class BouncerViewController: UIViewController {
             player.view.sizeToFit()
             player.controlStyle = MPMovieControlStyle.None
             player.movieSourceType = MPMovieSourceType.File
-            player.repeatMode = MPMovieRepeatMode.One
+            if repeatVideo { player.repeatMode = MPMovieRepeatMode.One }
+            else { player.repeatMode = MPMovieRepeatMode.None }
             player.play()
             bouncerView.addSubview(player.view)
         } else {
-        debugPrintln("Oops, something went wrong when playing background video")
+            debugPrintln("Oops, something went wrong when playing background video")
         }
     }
     
     struct Constants {
-        static let  BlockSize = CGSize(width: 40.0, height: 40.0)
+        static let BlockSize = CGSize(width: 40.0, height: 40.0)
+        static let BoxPathName = "Box"
     }
     
     struct Videos {
@@ -84,7 +88,7 @@ class BouncerViewController: UIViewController {
     var redBlock: UIView?
 
     lazy var blockColor: UIColor = {
-        if NSUserDefaults.standardUserDefaults().boolForKey("BouncerViewController.isRandomColor") == true {
+        if NSUserDefaults.standardUserDefaults().boolForKey("BouncerViewController.UseRandomColor") == true {
             return UIColor.random
         } else {
             return UIColor.redColor()
@@ -113,23 +117,42 @@ class BouncerViewController: UIViewController {
         AppDelegate.Motion.Manager.stopAccelerometerUpdates()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        var gameRect = bouncerView.bounds
+        gameRect.size.height *= 2
+        bouncer.addBarrier(UIBezierPath(rect: gameRect), named: Constants.BoxPathName)
+        //Its not nice if the player looses a block because the device has been rotated accidentally. In such cases put the block back on screen:
+        for block in bouncer.blocks {
+            if !CGRectContainsRect(bouncerView.bounds, block.frame) {
+                placeDrop(block)
+                animator.updateItemUsingCurrentState(block)
+            }
+        }
+    }
+    
     func addDrop() -> UIView {
         let drop = UIView(frame: CGRect(origin: CGPointZero, size: Constants.BlockSize))
-        drop.center = CGPoint(x: bouncerView.bounds.midX, y: bouncerView.bounds.midY)
+        placeDrop(drop)
         bouncerView.addSubview(drop)
         return drop
+    }
+    
+    func placeDrop(drop: UIView) {
+        drop.center = CGPoint(x: bouncerView.bounds.midX, y: bouncerView.bounds.midY)  //from ball game
     }
     
 }
 
 private extension String {
     static var random: String {
-        switch arc4random() % 5 {
+        switch arc4random() % 6 {
         case 0: return "A"
         case 1: return "B"
         case 2: return "C"
         case 3: return "D"
-        default: return "E"
+        case 4: return "E"
+        default: return "C"
         }
     }
 }

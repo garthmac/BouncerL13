@@ -12,7 +12,7 @@
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
-			<real>0.85</real>
+			<real>0.95</real>
 			<key>Key</key>
 			<string>BouncerBehavior.Elasticity</string>
 			<key>MaximumValue</key>
@@ -60,7 +60,23 @@
 			<key>DefaultValue</key>
 			<false/>
 			<key>Key</key>
-			<string>BouncerViewController.isRandomColor</string>
+			<string>BouncerViewController.UseRandomColor</string>
+			<key>Title</key>
+			<string>Enabled</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Continuous Repeat</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<true/>
+			<key>Key</key>
+			<string>BouncerViewController.RepeatVideo</string>
 			<key>Title</key>
 			<string>Enabled</string>
 			<key>Type</key>
