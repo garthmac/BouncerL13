@@ -18,7 +18,6 @@
 		889BA01E1B0E2420001172AB /* CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 889BA01D1B0E233D001172AB /* CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4 */; };
 		889BA0211B0E66B6001172AB /* Best_of_Hubble_Space_Telescope__Extremely_High_Resolution.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 889BA01F1B0E6679001172AB /* Best_of_Hubble_Space_Telescope__Extremely_High_Resolution.mp4 */; };
 		889BA0221B0E66BD001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 889BA0201B0E668D001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 */; };
-		889BA0241B0E7A7F001172AB /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 889BA0231B0E7A63001172AB /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 */; };
 		889BA0261B0EA525001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 889BA0251B0EA4E9001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 */; };
 		889BA0281B0FA20F001172AB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 885F89251B0BA3FB009C82EB /* Settings.bundle */; };
 		88EBF2801B2387610090A5A0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 88EBF27F1B2387610090A5A0 /* LICENSE */; };
@@ -44,6 +43,7 @@
 		88EBF2FA1B24180A0090A5A0 /* Icon-44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88EBF2F51B24180A0090A5A0 /* Icon-44@2x.png */; };
 		88EBF2FB1B24180A0090A5A0 /* Icon-86@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88EBF2F61B24180A0090A5A0 /* Icon-86@2x.png */; };
 		88EBF2FC1B24180A0090A5A0 /* Icon-98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88EBF2F71B24180A0090A5A0 /* Icon-98@2x.png */; };
+		88EBF3031B277BC80090A5A0 /* Matthew_24.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 88EBF3021B277BA30090A5A0 /* Matthew_24.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +98,7 @@
 		88EBF2F51B24180A0090A5A0 /* Icon-44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-44@2x.png"; sourceTree = "<group>"; };
 		88EBF2F61B24180A0090A5A0 /* Icon-86@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-86@2x.png"; sourceTree = "<group>"; };
 		88EBF2F71B24180A0090A5A0 /* Icon-98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-98@2x.png"; sourceTree = "<group>"; };
+		88EBF3021B277BA30090A5A0 /* Matthew_24.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Matthew_24.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +152,7 @@
 				889BA0251B0EA4E9001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 */,
 				889BA0201B0E668D001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 */,
 				889BA0231B0E7A63001172AB /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 */,
+				88EBF3021B277BA30090A5A0 /* Matthew_24.mp4 */,
 				889BA01F1B0E6679001172AB /* Best_of_Hubble_Space_Telescope__Extremely_High_Resolution.mp4 */,
 				885F89061B0BA085009C82EB /* LaunchScreen.xib */,
 				885F88FC1B0BA085009C82EB /* Info.plist */,
@@ -310,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88EBF3031B277BC80090A5A0 /* Matthew_24.mp4 in Resources */,
 				88EBF2F81B24180A0090A5A0 /* Icon-24@2x.png in Resources */,
 				88EBF2F91B24180A0090A5A0 /* Icon-27.5@2x.png in Resources */,
 				88EBF2FA1B24180A0090A5A0 /* Icon-44@2x.png in Resources */,
@@ -324,7 +327,6 @@
 				88EBF2C71B2411E40090A5A0 /* Icon-50@2x.png in Resources */,
 				889BA0261B0EA525001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 in Resources */,
 				88EBF2D61B2411E40090A5A0 /* iTunesArtwork@2x.png in Resources */,
-				889BA0241B0E7A7F001172AB /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 in Resources */,
 				88EBF2C81B2411E40090A5A0 /* Icon-57.png in Resources */,
 				889BA0221B0E66BD001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 in Resources */,
 				889BA0211B0E66B6001172AB /* Best_of_Hubble_Space_Telescope__Extremely_High_Resolution.mp4 in Resources */,

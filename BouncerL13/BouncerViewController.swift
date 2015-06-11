@@ -18,13 +18,20 @@ class BouncerViewController: UIViewController {
         UIDynamicAnimator(referenceView: self.bouncerView) }()
     var moviePlayer: MPMoviePlayerController!
     lazy var randomLetter: String = {
-        if let fav = NSUserDefaults.standardUserDefaults().stringForKey("BouncerViewController.FavVideo") {
+        if let fav = NSUserDefaults.standardUserDefaults().stringForKey(Constants.FavVideo) {
             if fav != "" { return fav } //without this check video 6 gets returned if settings empty
         }
         return String.random
     }()
     lazy var repeatVideo: Bool = {
-        return NSUserDefaults.standardUserDefaults().boolForKey("BouncerViewController.RepeatVideo")
+        return NSUserDefaults.standardUserDefaults().boolForKey(Constants.RepeatVideo)
+        }()
+    lazy var opacity: CGFloat = {
+        let alpha = NSUserDefaults.standardUserDefaults().floatForKey(Constants.BlockOpacity)
+        if alpha != 0.0 {
+            return CGFloat(alpha)
+        }
+        return 1.0
         }()
     
     override func viewDidLoad() {
@@ -72,8 +79,12 @@ class BouncerViewController: UIViewController {
     }
     
     struct Constants {
+        static let BlockOpacity = "BouncerViewController.BlockOpacity"
+        static let BlockPathName = "Box"
+        static let BlockRandomColorOn = "BouncerViewController.UseRandomColor"
         static let BlockSize = CGSize(width: 40.0, height: 40.0)
-        static let BoxPathName = "Box"
+        static let FavVideo = "BouncerViewController.FavVideo"
+        static let RepeatVideo = "BouncerViewController.RepeatVideo"
     }
     
     struct Videos {
@@ -82,17 +93,16 @@ class BouncerViewController: UIViewController {
             B = "CYMATICS_Science_Vs._Music_-_Nigel_Stanford",
             C = "Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus)",
             D = "How_to_Get_to_Mars._Very_Cool!_HD",
-            E = "Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1"
+            E = "Matthew_24"
     }
     
     var redBlock: UIView?
 
     lazy var blockColor: UIColor = {
-        if NSUserDefaults.standardUserDefaults().boolForKey("BouncerViewController.UseRandomColor") == true {
+        if NSUserDefaults.standardUserDefaults().boolForKey(Constants.BlockRandomColorOn) == true {
             return UIColor.random
-        } else {
-            return UIColor.redColor()
         }
+        return UIColor.redColor()
     }()
 
     
@@ -121,7 +131,7 @@ class BouncerViewController: UIViewController {
         super.viewDidLayoutSubviews()
         var gameRect = bouncerView.bounds
         gameRect.size.height *= 2
-        bouncer.addBarrier(UIBezierPath(rect: gameRect), named: Constants.BoxPathName)
+        bouncer.addBarrier(UIBezierPath(rect: gameRect), named: Constants.BlockPathName)
         //Its not nice if the player looses a block because the device has been rotated accidentally. In such cases put the block back on screen:
         for block in bouncer.blocks {
             if !CGRectContainsRect(bouncerView.bounds, block.frame) {
@@ -133,6 +143,7 @@ class BouncerViewController: UIViewController {
     
     func addDrop() -> UIView {
         let drop = UIView(frame: CGRect(origin: CGPointZero, size: Constants.BlockSize))
+        drop.alpha = opacity
         placeDrop(drop)
         bouncerView.addSubview(drop)
         return drop
@@ -141,7 +152,6 @@ class BouncerViewController: UIViewController {
     func placeDrop(drop: UIView) {
         drop.center = CGPoint(x: bouncerView.bounds.midX, y: bouncerView.bounds.midY)  //from ball game
     }
-    
 }
 
 private extension String {
