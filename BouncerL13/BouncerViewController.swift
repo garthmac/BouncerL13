@@ -19,7 +19,9 @@ class BouncerViewController: UIViewController {
     var moviePlayer: MPMoviePlayerController!
     lazy var randomLetter: String = {
         if let fav = NSUserDefaults.standardUserDefaults().stringForKey(Constants.FavVideo) {
-            if fav != "" { return fav } //without this check video 6 gets returned if settings empty
+            if !fav.isEmpty {
+                return fav  //if settings favVideo not set
+            }
         }
         return String.random
     }()
@@ -41,12 +43,14 @@ class BouncerViewController: UIViewController {
     }
     
     func videoNameFor(sel: String) -> String {
-        switch sel {
+        switch String(Array(sel).first!) {
         case "A": return BouncerViewController.Videos.A
         case "B": return BouncerViewController.Videos.B
         case "C": return BouncerViewController.Videos.C
         case "D": return BouncerViewController.Videos.D
         case "E": return BouncerViewController.Videos.E
+        case "F": return BouncerViewController.Videos.F
+        case "G": return BouncerViewController.Videos.G
         default: return BouncerViewController.Videos.C
         }
     }
@@ -60,17 +64,18 @@ class BouncerViewController: UIViewController {
             var model = UIDevice.currentDevice().model
             if model.hasPrefix("iPad") {
                 player.view.frame.size = CGSize(width: 1024, height: 800)
-            } else {
+            } else { // midY/2 is a compromize for iPhones
                 player.view.center = CGPoint(x: bouncerView.bounds.midX, y: bouncerView.bounds.midY/2)
-                // midY/2 is a compromize for iPhones
             }
             player.scalingMode = MPMovieScalingMode.AspectFit
             player.setFullscreen(true, animated: true)
             player.view.sizeToFit()
             player.controlStyle = MPMovieControlStyle.None
             player.movieSourceType = MPMovieSourceType.File
-            if repeatVideo { player.repeatMode = MPMovieRepeatMode.One }
-            else { player.repeatMode = MPMovieRepeatMode.None }
+            if repeatVideo {
+                player.repeatMode = MPMovieRepeatMode.One }
+            else {
+                player.repeatMode = MPMovieRepeatMode.None }
             player.play()
             bouncerView.addSubview(player.view)
         } else {
@@ -93,7 +98,9 @@ class BouncerViewController: UIViewController {
             B = "CYMATICS_Science_Vs._Music_-_Nigel_Stanford",
             C = "Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus)",
             D = "How_to_Get_to_Mars._Very_Cool!_HD",
-            E = "Matthew_24"
+            E = "Matthew_24",
+            F = "Phil Wickham - This Is Amazing Grace",
+            G = "Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1"
     }
     
     var redBlock: UIView?
@@ -156,12 +163,14 @@ class BouncerViewController: UIViewController {
 
 private extension String {
     static var random: String {
-        switch arc4random() % 6 {
+        switch arc4random() % 8 {
         case 0: return "A"
         case 1: return "B"
         case 2: return "C"
         case 3: return "D"
         case 4: return "E"
+        case 5: return "F"
+        case 6: return "G"
         default: return "C"
         }
     }
@@ -180,6 +189,7 @@ private extension UIColor {
         case 7: return UIColor.darkGrayColor()
         case 8: return UIColor.lightGrayColor()
         case 9: return UIColor.cyanColor()
+        //case 10: return UIColor.clearColor()
         default: return UIColor.blackColor()
         }
     }

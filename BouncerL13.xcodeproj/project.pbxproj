@@ -14,9 +14,10 @@
 		885F89221B0BA3BC009C82EB /* BouncerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F891F1B0BA3BC009C82EB /* BouncerBehavior.swift */; };
 		885F89241B0BA3BC009C82EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885F89211B0BA3BC009C82EB /* Main.storyboard */; };
 		885F89281B0BA4DC009C82EB /* BouncerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F89271B0BA4DC009C82EB /* BouncerViewController.swift */; };
+		88942DB11B40941600F40BDE /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 889BA0231B0E7A63001172AB /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 */; };
+		88942DB31B4095A200F40BDE /* Phil Wickham - This Is Amazing Grace.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 88942DB21B40958F00F40BDE /* Phil Wickham - This Is Amazing Grace.mp4 */; };
 		889BA01C1B0D86C2001172AB /* Youre_Beautiful_-Phil_Wickham_{HD}.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 889BA01B1B0D85F2001172AB /* Youre_Beautiful_-Phil_Wickham_{HD}.mp4 */; };
 		889BA01E1B0E2420001172AB /* CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 889BA01D1B0E233D001172AB /* CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4 */; };
-		889BA0211B0E66B6001172AB /* Best_of_Hubble_Space_Telescope__Extremely_High_Resolution.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 889BA01F1B0E6679001172AB /* Best_of_Hubble_Space_Telescope__Extremely_High_Resolution.mp4 */; };
 		889BA0221B0E66BD001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 889BA0201B0E668D001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 */; };
 		889BA0261B0EA525001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 889BA0251B0EA4E9001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 */; };
 		889BA0281B0FA20F001172AB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 885F89251B0BA3FB009C82EB /* Settings.bundle */; };
@@ -69,9 +70,9 @@
 		885F89211B0BA3BC009C82EB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		885F89251B0BA3FB009C82EB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		885F89271B0BA4DC009C82EB /* BouncerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncerViewController.swift; sourceTree = "<group>"; };
+		88942DB21B40958F00F40BDE /* Phil Wickham - This Is Amazing Grace.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phil Wickham - This Is Amazing Grace.mp4"; sourceTree = "<group>"; };
 		889BA01B1B0D85F2001172AB /* Youre_Beautiful_-Phil_Wickham_{HD}.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Youre_Beautiful_-Phil_Wickham_{HD}.mp4"; sourceTree = "<group>"; };
 		889BA01D1B0E233D001172AB /* CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4"; sourceTree = "<group>"; };
-		889BA01F1B0E6679001172AB /* Best_of_Hubble_Space_Telescope__Extremely_High_Resolution.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Best_of_Hubble_Space_Telescope__Extremely_High_Resolution.mp4; sourceTree = "<group>"; };
 		889BA0201B0E668D001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "How_to_Get_to_Mars._Very_Cool!_HD.mp4"; sourceTree = "<group>"; };
 		889BA0231B0E7A63001172AB /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4"; sourceTree = "<group>"; };
 		889BA0251B0EA4E9001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4"; sourceTree = "<group>"; };
@@ -151,9 +152,9 @@
 				889BA01D1B0E233D001172AB /* CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4 */,
 				889BA0251B0EA4E9001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 */,
 				889BA0201B0E668D001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 */,
-				889BA0231B0E7A63001172AB /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 */,
 				88EBF3021B277BA30090A5A0 /* Matthew_24.mp4 */,
-				889BA01F1B0E6679001172AB /* Best_of_Hubble_Space_Telescope__Extremely_High_Resolution.mp4 */,
+				88942DB21B40958F00F40BDE /* Phil Wickham - This Is Amazing Grace.mp4 */,
+				889BA0231B0E7A63001172AB /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 */,
 				885F89061B0BA085009C82EB /* LaunchScreen.xib */,
 				885F88FC1B0BA085009C82EB /* Info.plist */,
 				885F89041B0BA085009C82EB /* Images.xcassets */,
@@ -312,6 +313,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88942DB31B4095A200F40BDE /* Phil Wickham - This Is Amazing Grace.mp4 in Resources */,
+				88942DB11B40941600F40BDE /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 in Resources */,
 				88EBF3031B277BC80090A5A0 /* Matthew_24.mp4 in Resources */,
 				88EBF2F81B24180A0090A5A0 /* Icon-24@2x.png in Resources */,
 				88EBF2F91B24180A0090A5A0 /* Icon-27.5@2x.png in Resources */,
@@ -329,7 +332,6 @@
 				88EBF2D61B2411E40090A5A0 /* iTunesArtwork@2x.png in Resources */,
 				88EBF2C81B2411E40090A5A0 /* Icon-57.png in Resources */,
 				889BA0221B0E66BD001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 in Resources */,
-				889BA0211B0E66B6001172AB /* Best_of_Hubble_Space_Telescope__Extremely_High_Resolution.mp4 in Resources */,
 				88EBF2CF1B2411E40090A5A0 /* Icon-76@2x.png in Resources */,
 				88EBF2C41B2411E40090A5A0 /* Icon-40@2x.png in Resources */,
 				88EBF2CA1B2411E40090A5A0 /* Icon-60@2x.png in Resources */,
