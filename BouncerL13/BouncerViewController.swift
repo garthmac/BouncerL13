@@ -90,6 +90,7 @@ class BouncerViewController: UIViewController {
         static let BlockSize = CGSize(width: 40.0, height: 40.0)
         static let FavVideo = "BouncerViewController.FavVideo"
         static let RepeatVideo = "BouncerViewController.RepeatVideo"
+        static let Credits = "Credits"
     }
     
     struct Videos {
@@ -103,7 +104,7 @@ class BouncerViewController: UIViewController {
             G = "Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1"
     }
     
-    var redBlock: UIView?
+    private var redBlock: UIButton?
 
     lazy var blockColor: UIColor = {
         if NSUserDefaults.standardUserDefaults().boolForKey(Constants.BlockRandomColorOn) == true {
@@ -111,15 +112,13 @@ class BouncerViewController: UIViewController {
         }
         return UIColor.redColor()
     }()
-
     
     override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
         if redBlock == nil {
             redBlock = addDrop()
-            redBlock?.backgroundColor = blockColor
             bouncer.addDrop(redBlock!)
         }
+        super.viewDidAppear(animated)
         let motionMgr = AppDelegate.Motion.Manager
         if motionMgr.accelerometerAvailable {
             motionMgr.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue()) { (data, error) -> Void in
@@ -147,16 +146,33 @@ class BouncerViewController: UIViewController {
             }
         }
     }
-    
-    func addDrop() -> UIView {
-        let drop = UIView(frame: CGRect(origin: CGPointZero, size: Constants.BlockSize))
-        drop.alpha = opacity
+    @IBAction func showCredits(sender: UIButton) {
+        buttonAction(sender)
+    }
+    lazy var button: UIButton = {
+        let button = UIButton.buttonWithType(UIButtonType.System) as! UIButton
+        button.frame = CGRect(origin: CGPointZero, size: Constants.BlockSize)
+        button.setTitle("Red", forState: UIControlState.Normal)
+        button.alpha = self.opacity
+        button.backgroundColor = self.blockColor
+        button.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        return button
+        }()
+    func addDrop() -> UIButton {
+        let drop = button
         placeDrop(drop)
         bouncerView.addSubview(drop)
         return drop
     }
-    
-    func placeDrop(drop: UIView) {
+    func buttonAction(sender: UIButton) {
+        println("Button tapped")
+        self.performSegueWithIdentifier(Constants.Credits, sender: sender)
+    }
+    @IBAction func unwindFromModalViewController(segue: UIStoryboardSegue) {
+        //drag from back button to viewController exit button
+    }
+
+    func placeDrop(drop: UIButton) {
         drop.center = CGPoint(x: bouncerView.bounds.midX, y: bouncerView.bounds.midY)  //from ball game
     }
 }

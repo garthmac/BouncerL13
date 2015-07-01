@@ -9,7 +9,7 @@
 import UIKit
 
 class BouncerBehavior: UIDynamicBehavior {
-    
+    //changed all UIView to UIButton July 1/15
     let gravity = UIGravityBehavior()
     
     lazy var collider: UICollisionBehavior = {
@@ -24,9 +24,9 @@ class BouncerBehavior: UIDynamicBehavior {
             }
         return lazyCreatedCollider
         }()
-    var blocks:[UIView] {
+    var blocks:[UIButton] {
         get {
-            return collider.items.filter{$0 is UIView}.map{$0 as! UIView}
+            return collider.items.filter{$0 is UIButton}.map{$0 as! UIButton}
         }
     }
     lazy var dropBehavior: UIDynamicItemBehavior = {
@@ -56,7 +56,7 @@ class BouncerBehavior: UIDynamicBehavior {
         collider.addBoundaryWithIdentifier(name, forPath: path)
     }
     
-    func addDrop(drop: UIView) {
+    func addDrop(drop: UIButton) {
         //        println(dynamicAnimator?.referenceView?.description)
         dynamicAnimator?.referenceView?.addSubview(drop)
         gravity.addItem(drop)
@@ -64,7 +64,7 @@ class BouncerBehavior: UIDynamicBehavior {
         dropBehavior.addItem(drop)
     }
     
-    func removeDrop(drop: UIView) {
+    func removeDrop(drop: UIButton) {
         gravity.removeItem(drop)
         collider.removeItem(drop)
         dropBehavior.removeItem(drop)

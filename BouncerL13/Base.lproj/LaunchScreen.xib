@@ -21,7 +21,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BouncerL13" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="175" width="441" height="35"/>
+                    <rect key="frame" x="20" y="286" width="441" height="35"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="a8n-eX-ZDL"/>
                     </constraints>
@@ -47,6 +47,7 @@
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="ZR6-kV-2DG" secondAttribute="centerY" id="eJA-mF-CTg"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
                 <constraint firstAttribute="centerY" secondItem="ZR6-kV-2DG" secondAttribute="centerY" id="hwq-9U-HcZ"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="ZR6-kV-2DG" secondAttribute="bottom" constant="8" symbolic="YES" id="jBI-hM-m6p"/>
@@ -59,6 +60,7 @@
                 <mask key="constraints">
                     <exclude reference="46j-5T-hji"/>
                     <exclude reference="5cJ-9S-tgC"/>
+                    <exclude reference="9h5-hJ-nqs"/>
                     <exclude reference="hwq-9U-HcZ"/>
                     <exclude reference="tpE-vS-UWw"/>
                     <exclude reference="Kzo-t9-V3l"/>

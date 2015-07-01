@@ -21,6 +21,16 @@
 		889BA0221B0E66BD001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 889BA0201B0E668D001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 */; };
 		889BA0261B0EA525001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 889BA0251B0EA4E9001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 */; };
 		889BA0281B0FA20F001172AB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 885F89251B0BA3FB009C82EB /* Settings.bundle */; };
+		88DCAD3F1B4451DC0079046A /* paddle1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD361B4451DC0079046A /* paddle1.jpg */; };
+		88DCAD401B4451DC0079046A /* padel520.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD371B4451DC0079046A /* padel520.jpg */; };
+		88DCAD411B4451DC0079046A /* snoopy-tennis.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD381B4451DC0079046A /* snoopy-tennis.png */; };
+		88DCAD421B4451DC0079046A /* Brookes_25_27119b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD391B4451DC0079046A /* Brookes_25_27119b.jpg */; };
+		88DCAD431B4451DC0079046A /* IMG_3562.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD3A1B4451DC0079046A /* IMG_3562.jpg */; };
+		88DCAD441B4451DC0079046A /* badge-git-real-5d91905b69d46286cab389797ea81983.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD3B1B4451DC0079046A /* badge-git-real-5d91905b69d46286cab389797ea81983.png */; };
+		88DCAD451B4451DC0079046A /* glory.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD3C1B4451DC0079046A /* glory.png */; };
+		88DCAD461B4451DC0079046A /* mackie_swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD3D1B4451DC0079046A /* mackie_swift.png */; };
+		88DCAD471B4451DC0079046A /* 1-FloUnitCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD3E1B4451DC0079046A /* 1-FloUnitCircle.png */; };
+		88DCAD491B4451F90079046A /* extension_UIImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD481B4451F90079046A /* extension_UIImage.png */; };
 		88EBF2801B2387610090A5A0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 88EBF27F1B2387610090A5A0 /* LICENSE */; };
 		88EBF2831B238A440090A5A0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 88EBF2811B2387720090A5A0 /* README.md */; };
 		88EBF2C21B2411E40090A5A0 /* Icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88EBF28D1B2411E40090A5A0 /* Icon-29@2x.png */; };
@@ -70,12 +80,22 @@
 		885F89211B0BA3BC009C82EB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		885F89251B0BA3FB009C82EB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		885F89271B0BA4DC009C82EB /* BouncerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncerViewController.swift; sourceTree = "<group>"; };
-		88942DB21B40958F00F40BDE /* Phil Wickham - This Is Amazing Grace.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phil Wickham - This Is Amazing Grace.mp4"; sourceTree = "<group>"; };
-		889BA01B1B0D85F2001172AB /* Youre_Beautiful_-Phil_Wickham_{HD}.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Youre_Beautiful_-Phil_Wickham_{HD}.mp4"; sourceTree = "<group>"; };
-		889BA01D1B0E233D001172AB /* CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4"; sourceTree = "<group>"; };
-		889BA0201B0E668D001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "How_to_Get_to_Mars._Very_Cool!_HD.mp4"; sourceTree = "<group>"; };
-		889BA0231B0E7A63001172AB /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4"; sourceTree = "<group>"; };
-		889BA0251B0EA4E9001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4"; sourceTree = "<group>"; };
+		88942DB21B40958F00F40BDE /* Phil Wickham - This Is Amazing Grace.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Phil Wickham - This Is Amazing Grace.mp4"; path = "../Phil Wickham - This Is Amazing Grace.mp4"; sourceTree = "<group>"; };
+		889BA01B1B0D85F2001172AB /* Youre_Beautiful_-Phil_Wickham_{HD}.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Youre_Beautiful_-Phil_Wickham_{HD}.mp4"; path = "../Youre_Beautiful_-Phil_Wickham_{HD}.mp4"; sourceTree = "<group>"; };
+		889BA01D1B0E233D001172AB /* CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4"; path = "../CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4"; sourceTree = "<group>"; };
+		889BA0201B0E668D001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "How_to_Get_to_Mars._Very_Cool!_HD.mp4"; path = "../How_to_Get_to_Mars._Very_Cool!_HD.mp4"; sourceTree = "<group>"; };
+		889BA0231B0E7A63001172AB /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4"; path = "../Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4"; sourceTree = "<group>"; };
+		889BA0251B0EA4E9001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4"; path = "../Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4"; sourceTree = "<group>"; };
+		88DCAD361B4451DC0079046A /* paddle1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paddle1.jpg; sourceTree = "<group>"; };
+		88DCAD371B4451DC0079046A /* padel520.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = padel520.jpg; sourceTree = "<group>"; };
+		88DCAD381B4451DC0079046A /* snoopy-tennis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snoopy-tennis.png"; sourceTree = "<group>"; };
+		88DCAD391B4451DC0079046A /* Brookes_25_27119b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Brookes_25_27119b.jpg; sourceTree = "<group>"; };
+		88DCAD3A1B4451DC0079046A /* IMG_3562.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3562.jpg; sourceTree = "<group>"; };
+		88DCAD3B1B4451DC0079046A /* badge-git-real-5d91905b69d46286cab389797ea81983.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badge-git-real-5d91905b69d46286cab389797ea81983.png"; sourceTree = "<group>"; };
+		88DCAD3C1B4451DC0079046A /* glory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glory.png; sourceTree = "<group>"; };
+		88DCAD3D1B4451DC0079046A /* mackie_swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mackie_swift.png; sourceTree = "<group>"; };
+		88DCAD3E1B4451DC0079046A /* 1-FloUnitCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-FloUnitCircle.png"; sourceTree = "<group>"; };
+		88DCAD481B4451F90079046A /* extension_UIImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = extension_UIImage.png; sourceTree = "<group>"; };
 		88EBF27F1B2387610090A5A0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		88EBF2811B2387720090A5A0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		88EBF28D1B2411E40090A5A0 /* Icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29@2x.png"; sourceTree = "<group>"; };
@@ -93,13 +113,13 @@
 		88EBF29A1B2411E40090A5A0 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		88EBF29D1B2411E40090A5A0 /* Icon-Small-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-29.png"; sourceTree = "<group>"; };
 		88EBF29E1B2411E40090A5A0 /* Icon-Small-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40.png"; sourceTree = "<group>"; };
-		88EBF2A11B2411E40090A5A0 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		88EBF2A11B2411E40090A5A0 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "Assets/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		88EBF2F31B24180A0090A5A0 /* Icon-24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-24@2x.png"; sourceTree = "<group>"; };
 		88EBF2F41B24180A0090A5A0 /* Icon-27.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-27.5@2x.png"; sourceTree = "<group>"; };
 		88EBF2F51B24180A0090A5A0 /* Icon-44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-44@2x.png"; sourceTree = "<group>"; };
 		88EBF2F61B24180A0090A5A0 /* Icon-86@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-86@2x.png"; sourceTree = "<group>"; };
 		88EBF2F71B24180A0090A5A0 /* Icon-98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-98@2x.png"; sourceTree = "<group>"; };
-		88EBF3021B277BA30090A5A0 /* Matthew_24.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Matthew_24.mp4; sourceTree = "<group>"; };
+		88EBF3021B277BA30090A5A0 /* Matthew_24.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Matthew_24.mp4; path = ../Matthew_24.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,16 +168,10 @@
 				885F89251B0BA3FB009C82EB /* Settings.bundle */,
 				885F891F1B0BA3BC009C82EB /* BouncerBehavior.swift */,
 				885F89271B0BA4DC009C82EB /* BouncerViewController.swift */,
-				889BA01B1B0D85F2001172AB /* Youre_Beautiful_-Phil_Wickham_{HD}.mp4 */,
-				889BA01D1B0E233D001172AB /* CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4 */,
-				889BA0251B0EA4E9001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 */,
-				889BA0201B0E668D001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 */,
-				88EBF3021B277BA30090A5A0 /* Matthew_24.mp4 */,
-				88942DB21B40958F00F40BDE /* Phil Wickham - This Is Amazing Grace.mp4 */,
-				889BA0231B0E7A63001172AB /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 */,
 				885F89061B0BA085009C82EB /* LaunchScreen.xib */,
 				885F88FC1B0BA085009C82EB /* Info.plist */,
 				885F89041B0BA085009C82EB /* Images.xcassets */,
+				88EBF2A11B2411E40090A5A0 /* iTunesArtwork@2x.png */,
 				88EBF2871B2411E40090A5A0 /* Assets */,
 				885F88FB1B0BA085009C82EB /* Supporting Files */,
 			);
@@ -188,11 +202,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		88DCAD351B4451B20079046A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				88DCAD361B4451DC0079046A /* paddle1.jpg */,
+				88DCAD371B4451DC0079046A /* padel520.jpg */,
+				88DCAD381B4451DC0079046A /* snoopy-tennis.png */,
+				88DCAD391B4451DC0079046A /* Brookes_25_27119b.jpg */,
+				88DCAD3A1B4451DC0079046A /* IMG_3562.jpg */,
+				88DCAD3B1B4451DC0079046A /* badge-git-real-5d91905b69d46286cab389797ea81983.png */,
+				88DCAD3C1B4451DC0079046A /* glory.png */,
+				88DCAD3D1B4451DC0079046A /* mackie_swift.png */,
+				88DCAD3E1B4451DC0079046A /* 1-FloUnitCircle.png */,
+				88DCAD481B4451F90079046A /* extension_UIImage.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		88DCAD4C1B445CA10079046A /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				889BA01B1B0D85F2001172AB /* Youre_Beautiful_-Phil_Wickham_{HD}.mp4 */,
+				889BA01D1B0E233D001172AB /* CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4 */,
+				889BA0251B0EA4E9001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 */,
+				889BA0201B0E668D001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 */,
+				88EBF3021B277BA30090A5A0 /* Matthew_24.mp4 */,
+				88942DB21B40958F00F40BDE /* Phil Wickham - This Is Amazing Grace.mp4 */,
+				889BA0231B0E7A63001172AB /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 */,
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
 		88EBF2871B2411E40090A5A0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				88DCAD4C1B445CA10079046A /* Videos */,
+				88DCAD351B4451B20079046A /* Images */,
 				88EBF28A1B2411E40090A5A0 /* Icons */,
-				88EBF2A11B2411E40090A5A0 /* iTunesArtwork@2x.png */,
 				88EBF2A21B2411E40090A5A0 /* Screenshots */,
 			);
 			path = Assets;
@@ -313,17 +359,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DCAD401B4451DC0079046A /* padel520.jpg in Resources */,
 				88942DB31B4095A200F40BDE /* Phil Wickham - This Is Amazing Grace.mp4 in Resources */,
+				88DCAD3F1B4451DC0079046A /* paddle1.jpg in Resources */,
 				88942DB11B40941600F40BDE /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 in Resources */,
 				88EBF3031B277BC80090A5A0 /* Matthew_24.mp4 in Resources */,
 				88EBF2F81B24180A0090A5A0 /* Icon-24@2x.png in Resources */,
 				88EBF2F91B24180A0090A5A0 /* Icon-27.5@2x.png in Resources */,
 				88EBF2FA1B24180A0090A5A0 /* Icon-44@2x.png in Resources */,
 				88EBF2FB1B24180A0090A5A0 /* Icon-86@2x.png in Resources */,
+				88DCAD411B4451DC0079046A /* snoopy-tennis.png in Resources */,
 				88EBF2FC1B24180A0090A5A0 /* Icon-98@2x.png in Resources */,
 				88EBF2C61B2411E40090A5A0 /* Icon-50.png in Resources */,
+				88DCAD441B4451DC0079046A /* badge-git-real-5d91905b69d46286cab389797ea81983.png in Resources */,
 				88EBF2D31B2411E40090A5A0 /* Icon-Small-40.png in Resources */,
 				88EBF2D21B2411E40090A5A0 /* Icon-Small-29.png in Resources */,
+				88DCAD421B4451DC0079046A /* Brookes_25_27119b.jpg in Resources */,
 				88EBF2831B238A440090A5A0 /* README.md in Resources */,
 				889BA0281B0FA20F001172AB /* Settings.bundle in Resources */,
 				88EBF2CC1B2411E40090A5A0 /* Icon-72.png in Resources */,
@@ -333,18 +384,23 @@
 				88EBF2C81B2411E40090A5A0 /* Icon-57.png in Resources */,
 				889BA0221B0E66BD001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 in Resources */,
 				88EBF2CF1B2411E40090A5A0 /* Icon-76@2x.png in Resources */,
+				88DCAD491B4451F90079046A /* extension_UIImage.png in Resources */,
 				88EBF2C41B2411E40090A5A0 /* Icon-40@2x.png in Resources */,
 				88EBF2CA1B2411E40090A5A0 /* Icon-60@2x.png in Resources */,
 				88EBF2CE1B2411E40090A5A0 /* Icon-76.png in Resources */,
 				88EBF2C21B2411E40090A5A0 /* Icon-29@2x.png in Resources */,
 				88EBF2801B2387610090A5A0 /* LICENSE in Resources */,
 				88EBF2CD1B2411E40090A5A0 /* Icon-72@2x.png in Resources */,
+				88DCAD461B4451DC0079046A /* mackie_swift.png in Resources */,
 				889BA01E1B0E2420001172AB /* CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4 in Resources */,
 				889BA01C1B0D86C2001172AB /* Youre_Beautiful_-Phil_Wickham_{HD}.mp4 in Resources */,
+				88DCAD451B4451DC0079046A /* glory.png in Resources */,
 				88EBF2C91B2411E40090A5A0 /* Icon-57@2x.png in Resources */,
 				885F89241B0BA3BC009C82EB /* Main.storyboard in Resources */,
+				88DCAD471B4451DC0079046A /* 1-FloUnitCircle.png in Resources */,
 				88EBF2C31B2411E40090A5A0 /* Icon-29@3x.png in Resources */,
 				88EBF2CB1B2411E40090A5A0 /* Icon-60@3x.png in Resources */,
+				88DCAD431B4451DC0079046A /* IMG_3562.jpg in Resources */,
 				885F89081B0BA085009C82EB /* LaunchScreen.xib in Resources */,
 				885F89051B0BA085009C82EB /* Images.xcassets in Resources */,
 			);
@@ -419,6 +475,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -465,6 +522,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
