@@ -31,6 +31,15 @@
 		88DCAD461B4451DC0079046A /* mackie_swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD3D1B4451DC0079046A /* mackie_swift.png */; };
 		88DCAD471B4451DC0079046A /* 1-FloUnitCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD3E1B4451DC0079046A /* 1-FloUnitCircle.png */; };
 		88DCAD491B4451F90079046A /* extension_UIImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD481B4451F90079046A /* extension_UIImage.png */; };
+		88DCAD5C1B46B9710079046A /* peanuts-anim6.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD551B46B9710079046A /* peanuts-anim6.png */; };
+		88DCAD5D1B46B9710079046A /* peanuts-anim5.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD561B46B9710079046A /* peanuts-anim5.png */; };
+		88DCAD5E1B46B9710079046A /* peanuts-anim4.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD571B46B9710079046A /* peanuts-anim4.png */; };
+		88DCAD5F1B46B9710079046A /* peanuts-anim3.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD581B46B9710079046A /* peanuts-anim3.png */; };
+		88DCAD601B46B9710079046A /* peanuts-anim2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD591B46B9710079046A /* peanuts-anim2.png */; };
+		88DCAD611B46B9710079046A /* peanuts-anim1.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD5A1B46B9710079046A /* peanuts-anim1.png */; };
+		88DCAD621B46B9710079046A /* peanuts-anim0.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD5B1B46B9710079046A /* peanuts-anim0.png */; };
+		88DCAD651B46C24A0079046A /* peanuts-anim8.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD631B46C24A0079046A /* peanuts-anim8.png */; };
+		88DCAD661B46C24A0079046A /* peanuts-anim7.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DCAD641B46C24A0079046A /* peanuts-anim7.png */; };
 		88EBF2801B2387610090A5A0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 88EBF27F1B2387610090A5A0 /* LICENSE */; };
 		88EBF2831B238A440090A5A0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 88EBF2811B2387720090A5A0 /* README.md */; };
 		88EBF2C21B2411E40090A5A0 /* Icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88EBF28D1B2411E40090A5A0 /* Icon-29@2x.png */; };
@@ -96,6 +105,15 @@
 		88DCAD3D1B4451DC0079046A /* mackie_swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mackie_swift.png; sourceTree = "<group>"; };
 		88DCAD3E1B4451DC0079046A /* 1-FloUnitCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-FloUnitCircle.png"; sourceTree = "<group>"; };
 		88DCAD481B4451F90079046A /* extension_UIImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = extension_UIImage.png; sourceTree = "<group>"; };
+		88DCAD551B46B9710079046A /* peanuts-anim6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peanuts-anim6.png"; sourceTree = "<group>"; };
+		88DCAD561B46B9710079046A /* peanuts-anim5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peanuts-anim5.png"; sourceTree = "<group>"; };
+		88DCAD571B46B9710079046A /* peanuts-anim4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peanuts-anim4.png"; sourceTree = "<group>"; };
+		88DCAD581B46B9710079046A /* peanuts-anim3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peanuts-anim3.png"; sourceTree = "<group>"; };
+		88DCAD591B46B9710079046A /* peanuts-anim2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peanuts-anim2.png"; sourceTree = "<group>"; };
+		88DCAD5A1B46B9710079046A /* peanuts-anim1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peanuts-anim1.png"; sourceTree = "<group>"; };
+		88DCAD5B1B46B9710079046A /* peanuts-anim0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peanuts-anim0.png"; sourceTree = "<group>"; };
+		88DCAD631B46C24A0079046A /* peanuts-anim8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peanuts-anim8.png"; sourceTree = "<group>"; };
+		88DCAD641B46C24A0079046A /* peanuts-anim7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peanuts-anim7.png"; sourceTree = "<group>"; };
 		88EBF27F1B2387610090A5A0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		88EBF2811B2387720090A5A0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		88EBF28D1B2411E40090A5A0 /* Icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29@2x.png"; sourceTree = "<group>"; };
@@ -207,7 +225,6 @@
 			children = (
 				88DCAD361B4451DC0079046A /* paddle1.jpg */,
 				88DCAD371B4451DC0079046A /* padel520.jpg */,
-				88DCAD381B4451DC0079046A /* snoopy-tennis.png */,
 				88DCAD391B4451DC0079046A /* Brookes_25_27119b.jpg */,
 				88DCAD3A1B4451DC0079046A /* IMG_3562.jpg */,
 				88DCAD3B1B4451DC0079046A /* badge-git-real-5d91905b69d46286cab389797ea81983.png */,
@@ -215,6 +232,16 @@
 				88DCAD3D1B4451DC0079046A /* mackie_swift.png */,
 				88DCAD3E1B4451DC0079046A /* 1-FloUnitCircle.png */,
 				88DCAD481B4451F90079046A /* extension_UIImage.png */,
+				88DCAD381B4451DC0079046A /* snoopy-tennis.png */,
+				88DCAD631B46C24A0079046A /* peanuts-anim8.png */,
+				88DCAD641B46C24A0079046A /* peanuts-anim7.png */,
+				88DCAD551B46B9710079046A /* peanuts-anim6.png */,
+				88DCAD561B46B9710079046A /* peanuts-anim5.png */,
+				88DCAD571B46B9710079046A /* peanuts-anim4.png */,
+				88DCAD581B46B9710079046A /* peanuts-anim3.png */,
+				88DCAD591B46B9710079046A /* peanuts-anim2.png */,
+				88DCAD5A1B46B9710079046A /* peanuts-anim1.png */,
+				88DCAD5B1B46B9710079046A /* peanuts-anim0.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -364,25 +391,31 @@
 				88DCAD3F1B4451DC0079046A /* paddle1.jpg in Resources */,
 				88942DB11B40941600F40BDE /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 in Resources */,
 				88EBF3031B277BC80090A5A0 /* Matthew_24.mp4 in Resources */,
+				88DCAD5F1B46B9710079046A /* peanuts-anim3.png in Resources */,
+				88DCAD621B46B9710079046A /* peanuts-anim0.png in Resources */,
 				88EBF2F81B24180A0090A5A0 /* Icon-24@2x.png in Resources */,
 				88EBF2F91B24180A0090A5A0 /* Icon-27.5@2x.png in Resources */,
 				88EBF2FA1B24180A0090A5A0 /* Icon-44@2x.png in Resources */,
 				88EBF2FB1B24180A0090A5A0 /* Icon-86@2x.png in Resources */,
 				88DCAD411B4451DC0079046A /* snoopy-tennis.png in Resources */,
+				88DCAD5E1B46B9710079046A /* peanuts-anim4.png in Resources */,
 				88EBF2FC1B24180A0090A5A0 /* Icon-98@2x.png in Resources */,
 				88EBF2C61B2411E40090A5A0 /* Icon-50.png in Resources */,
 				88DCAD441B4451DC0079046A /* badge-git-real-5d91905b69d46286cab389797ea81983.png in Resources */,
 				88EBF2D31B2411E40090A5A0 /* Icon-Small-40.png in Resources */,
 				88EBF2D21B2411E40090A5A0 /* Icon-Small-29.png in Resources */,
 				88DCAD421B4451DC0079046A /* Brookes_25_27119b.jpg in Resources */,
+				88DCAD661B46C24A0079046A /* peanuts-anim7.png in Resources */,
 				88EBF2831B238A440090A5A0 /* README.md in Resources */,
 				889BA0281B0FA20F001172AB /* Settings.bundle in Resources */,
+				88DCAD601B46B9710079046A /* peanuts-anim2.png in Resources */,
 				88EBF2CC1B2411E40090A5A0 /* Icon-72.png in Resources */,
 				88EBF2C71B2411E40090A5A0 /* Icon-50@2x.png in Resources */,
 				889BA0261B0EA525001172AB /* Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus).mp4 in Resources */,
 				88EBF2D61B2411E40090A5A0 /* iTunesArtwork@2x.png in Resources */,
 				88EBF2C81B2411E40090A5A0 /* Icon-57.png in Resources */,
 				889BA0221B0E66BD001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 in Resources */,
+				88DCAD5D1B46B9710079046A /* peanuts-anim5.png in Resources */,
 				88EBF2CF1B2411E40090A5A0 /* Icon-76@2x.png in Resources */,
 				88DCAD491B4451F90079046A /* extension_UIImage.png in Resources */,
 				88EBF2C41B2411E40090A5A0 /* Icon-40@2x.png in Resources */,
@@ -392,6 +425,8 @@
 				88EBF2801B2387610090A5A0 /* LICENSE in Resources */,
 				88EBF2CD1B2411E40090A5A0 /* Icon-72@2x.png in Resources */,
 				88DCAD461B4451DC0079046A /* mackie_swift.png in Resources */,
+				88DCAD611B46B9710079046A /* peanuts-anim1.png in Resources */,
+				88DCAD651B46C24A0079046A /* peanuts-anim8.png in Resources */,
 				889BA01E1B0E2420001172AB /* CYMATICS_Science_Vs._Music_-_Nigel_Stanford.mp4 in Resources */,
 				889BA01C1B0D86C2001172AB /* Youre_Beautiful_-Phil_Wickham_{HD}.mp4 in Resources */,
 				88DCAD451B4451DC0079046A /* glory.png in Resources */,
@@ -400,6 +435,7 @@
 				88DCAD471B4451DC0079046A /* 1-FloUnitCircle.png in Resources */,
 				88EBF2C31B2411E40090A5A0 /* Icon-29@3x.png in Resources */,
 				88EBF2CB1B2411E40090A5A0 /* Icon-60@3x.png in Resources */,
+				88DCAD5C1B46B9710079046A /* peanuts-anim6.png in Resources */,
 				88DCAD431B4451DC0079046A /* IMG_3562.jpg in Resources */,
 				885F89081B0BA085009C82EB /* LaunchScreen.xib in Resources */,
 				885F89051B0BA085009C82EB /* Images.xcassets in Resources */,

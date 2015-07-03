@@ -147,15 +147,15 @@ class BouncerViewController: UIViewController {
         }
     }
     @IBAction func showCredits(sender: UIButton) {
-        buttonAction(sender)
+        creditsAction(sender)
     }
     lazy var button: UIButton = {
         let button = UIButton.buttonWithType(UIButtonType.System) as! UIButton
         button.frame = CGRect(origin: CGPointZero, size: Constants.BlockSize)
-        button.setTitle("Red", forState: UIControlState.Normal)
+        //button.setTitle("Red", forState: UIControlState.Normal)
         button.alpha = self.opacity
         button.backgroundColor = self.blockColor
-        button.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        //button.addTarget(self, action: "showCredits:", forControlEvents: UIControlEvents.TouchUpInside)
         return button
         }()
     func addDrop() -> UIButton {
@@ -164,7 +164,40 @@ class BouncerViewController: UIViewController {
         bouncerView.addSubview(drop)
         return drop
     }
-    func buttonAction(sender: UIButton) {
+    // MARK: - Navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == Constants.Credits {
+            if let ivc = segue.destinationViewController as? UIViewController {
+                //prepare
+                for view in ivc.view.subviews as! [UIView] {
+                    if let button = view as? UIButton {
+                        if button.titleForState(.Normal) == "Back" {
+                            button.layer.cornerRadius = 15 //size width is 30
+                            button.setTitle("X", forState: .Normal)
+                            button.setTitleColor(UIColor.blackColor(), forState: .Normal)
+                            button.layer.backgroundColor = UIColor.whiteColor().CGColor
+                            button.layer.borderColor = UIColor.blackColor().CGColor
+                            button.layer.borderWidth = 2
+                            return
+                        }
+                    }
+                    if let animatedImageView = view as? UIImageView {
+                        if animatedImageView.tag == 111 {
+                            let gifs = (0...8).map {
+                                UIImage(named: "peanuts-anim\($0).png") as! AnyObject
+                            }
+                            animatedImageView.animationImages = gifs
+                            animatedImageView.animationDuration = 9.0
+                            //animatedImageView.animationRepeatCount = 0 //0 repeat indefinitely is default
+                            animatedImageView.startAnimating()
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    func creditsAction(sender: UIButton) {
         println("Button tapped")
         self.performSegueWithIdentifier(Constants.Credits, sender: sender)
     }
