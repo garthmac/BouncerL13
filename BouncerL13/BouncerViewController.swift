@@ -35,13 +35,6 @@ class BouncerViewController: UIViewController {
         }
         return 1.0
         }()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        addVideo()
-        animator.addBehavior(bouncer)
-    }
-    
     func videoNameFor(sel: String) -> String {
         switch String(Array(sel).first!) {
         case "A": return BouncerViewController.Videos.A
@@ -54,7 +47,6 @@ class BouncerViewController: UIViewController {
         default: return BouncerViewController.Videos.C
         }
     }
-    
     func addVideo() {
         let path = NSBundle.mainBundle().pathForResource(videoNameFor(randomLetter), ofType:"mp4")
         let url = NSURL.fileURLWithPath(path!)
@@ -82,7 +74,6 @@ class BouncerViewController: UIViewController {
             debugPrintln("Oops, something went wrong when playing background video")
         }
     }
-    
     struct Constants {
         static let BlockOpacity = "BouncerViewController.BlockOpacity"
         static let BlockPathName = "Box"
@@ -92,7 +83,6 @@ class BouncerViewController: UIViewController {
         static let RepeatVideo = "BouncerViewController.RepeatVideo"
         static let Credits = "Credits"
     }
-    
     struct Videos {
         static let
             A = "Youre_Beautiful_-Phil_Wickham_{HD}",
@@ -103,21 +93,26 @@ class BouncerViewController: UIViewController {
             F = "Phil Wickham - This Is Amazing Grace",
             G = "Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1"
     }
-    
     private var redBlock: UIButton?
-
     lazy var blockColor: UIColor = {
         if NSUserDefaults.standardUserDefaults().boolForKey(Constants.BlockRandomColorOn) == true {
             return UIColor.random
         }
         return UIColor.redColor()
     }()
-    
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        addVideo()
+        animator.addBehavior(bouncer)
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         if redBlock == nil {
             redBlock = addDrop()
             bouncer.addDrop(redBlock!)
         }
+    }
+    override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         let motionMgr = AppDelegate.Motion.Manager
         if motionMgr.accelerometerAvailable {
@@ -127,12 +122,10 @@ class BouncerViewController: UIViewController {
             }
         }
     }
-    
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         AppDelegate.Motion.Manager.stopAccelerometerUpdates()
     }
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         var gameRect = bouncerView.bounds
@@ -150,19 +143,18 @@ class BouncerViewController: UIViewController {
         creditsAction(sender)
     }
     lazy var button: UIButton = {
-        let button = UIButton.buttonWithType(UIButtonType.System) as! UIButton
-        button.frame = CGRect(origin: CGPointZero, size: Constants.BlockSize)
-        //button.setTitle("Red", forState: UIControlState.Normal)
+        let button = UIButton(frame: CGRect(origin: CGPointZero, size: Constants.BlockSize))
         button.alpha = self.opacity
         button.backgroundColor = self.blockColor
-        //button.addTarget(self, action: "showCredits:", forControlEvents: UIControlEvents.TouchUpInside)
         return button
         }()
     func addDrop() -> UIButton {
-        let drop = button
-        placeDrop(drop)
-        bouncerView.addSubview(drop)
-        return drop
+        placeDrop(button)
+        bouncerView.addSubview(button)
+        return button
+    }
+    func placeDrop(drop: UIButton) {
+        drop.center = CGPoint(x: bouncerView.bounds.midX, y: bouncerView.bounds.midY)  //from ball game
     }
     // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -174,8 +166,8 @@ class BouncerViewController: UIViewController {
                         if button.titleForState(.Normal) == "Back" {
                             button.layer.cornerRadius = 15 //size width is 30
                             button.setTitle("X", forState: .Normal)
-                            button.setTitleColor(UIColor.blackColor(), forState: .Normal)
-                            button.layer.backgroundColor = UIColor.whiteColor().CGColor
+                            button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+                            button.layer.backgroundColor = UIColor.redColor().CGColor
                             button.layer.borderColor = UIColor.blackColor().CGColor
                             button.layer.borderWidth = 2
                             return
@@ -183,10 +175,10 @@ class BouncerViewController: UIViewController {
                     }
                     if let animatedImageView = view as? UIImageView {
                         if animatedImageView.tag == 111 {
-                            let gifs = (0...8).map {
+                            let images = (0...8).map {
                                 UIImage(named: "peanuts-anim\($0).png") as! AnyObject
                             }
-                            animatedImageView.animationImages = gifs
+                            animatedImageView.animationImages = images
                             animatedImageView.animationDuration = 9.0
                             //animatedImageView.animationRepeatCount = 0 //0 repeat indefinitely is default
                             animatedImageView.startAnimating()
@@ -196,7 +188,6 @@ class BouncerViewController: UIViewController {
             }
         }
     }
-    
     func creditsAction(sender: UIButton) {
         println("Button tapped")
         self.performSegueWithIdentifier(Constants.Credits, sender: sender)
@@ -205,9 +196,6 @@ class BouncerViewController: UIViewController {
         //drag from back button to viewController exit button
     }
 
-    func placeDrop(drop: UIButton) {
-        drop.center = CGPoint(x: bouncerView.bounds.midX, y: bouncerView.bounds.midY)  //from ball game
-    }
 }
 
 private extension String {
@@ -227,7 +215,7 @@ private extension String {
 
 private extension UIColor {
     class var random: UIColor {
-        switch arc4random() % 11 {
+        switch arc4random() % 12 {
         case 0: return UIColor.greenColor()
         case 1: return UIColor.blueColor()
         case 2: return UIColor.orangeColor()
@@ -238,7 +226,7 @@ private extension UIColor {
         case 7: return UIColor.darkGrayColor()
         case 8: return UIColor.lightGrayColor()
         case 9: return UIColor.cyanColor()
-        //case 10: return UIColor.clearColor()
+        case 10: return UIColor.clearColor()
         default: return UIColor.blackColor()
         }
     }
