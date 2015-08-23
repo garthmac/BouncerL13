@@ -72,11 +72,11 @@
 		</dict>
 		<dict>
 			<key>AutocapitalizationType</key>
-			<string>AllCharacters</string>
+			<string>Words</string>
 			<key>AutocorrectionType</key>
 			<string>No</string>
 			<key>DefaultValue</key>
-			<string>C</string>
+			<string></string>
 			<key>IsSecure</key>
 			<false/>
 			<key>Key</key>
@@ -96,7 +96,7 @@
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
-			<true/>
+			<false/>
 			<key>Key</key>
 			<string>BouncerViewController.RepeatVideo</string>
 			<key>Title</key>

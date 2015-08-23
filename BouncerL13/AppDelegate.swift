@@ -14,6 +14,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
+    
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+//        let firstLaunch = NSUserDefaults.standardUserDefaults().boolForKey("FirstLaunch")
+//        if firstLaunch  {
+//            println("Not first launch.")
+//        }
+//        else {
+//            println("First launch, setting NSUserDefault.")
+//            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "FirstLaunch")
+//        }
+        return true
+    }
+    
     struct Motion {
         static let Manager = CMMotionManager()
     }

@@ -26,7 +26,15 @@ class BouncerViewController: UIViewController {
         return String.random
     }()
     lazy var repeatVideo: Bool = {
-        return NSUserDefaults.standardUserDefaults().boolForKey(Constants.RepeatVideo)
+//        let firstLaunch = NSUserDefaults.standardUserDefaults().boolForKey("FirstLaunch")
+//        if firstLaunch  {
+//            println("First launch, setting Continuous Video...true")
+//            NSUserDefaults.standardUserDefaults().setBool(true, forKey: Constants.RepeatVideo)
+//            return true
+//        }
+//        else {
+            return NSUserDefaults.standardUserDefaults().boolForKey(Constants.RepeatVideo)
+//        }
         }()
     lazy var opacity: CGFloat = {
         let alpha = NSUserDefaults.standardUserDefaults().floatForKey(Constants.BlockOpacity)
@@ -44,6 +52,7 @@ class BouncerViewController: UIViewController {
         case "E": return BouncerViewController.Videos.E
         case "F": return BouncerViewController.Videos.F
         case "G": return BouncerViewController.Videos.G
+        case "H": return BouncerViewController.Videos.H
         default: return BouncerViewController.Videos.C
         }
     }
@@ -88,10 +97,11 @@ class BouncerViewController: UIViewController {
             A = "Youre_Beautiful_-Phil_Wickham_{HD}",
             B = "CYMATICS_Science_Vs._Music_-_Nigel_Stanford",
             C = "Cornerstone_-_Hillsong_Live_(2012_Album_Cornerstone)_Lyrics_DVD_(Worship_Song_to_Jesus)",
-            D = "How_to_Get_to_Mars._Very_Cool!_HD",
-            E = "Matthew_24",
-            F = "Phil Wickham - This Is Amazing Grace",
-            G = "Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1"
+            D = "Hillsong - Greater than All - with subtitles_lyrics",
+            E = "How_to_Get_to_Mars._Very_Cool!_HD",
+            F = "Matthew_24",
+            G = "Phil Wickham - This Is Amazing Grace",
+            H = "Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1"
     }
     private var redBlock: UIButton?
     lazy var blockColor: UIColor = {
@@ -200,7 +210,7 @@ class BouncerViewController: UIViewController {
 
 private extension String {
     static var random: String {
-        switch arc4random() % 8 {
+        switch arc4random() % 9 {
         case 0: return "A"
         case 1: return "B"
         case 2: return "C"
@@ -208,6 +218,7 @@ private extension String {
         case 4: return "E"
         case 5: return "F"
         case 6: return "G"
+        case 7: return "H"
         default: return "C"
         }
     }

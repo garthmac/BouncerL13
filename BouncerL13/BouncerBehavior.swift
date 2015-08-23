@@ -32,8 +32,12 @@ class BouncerBehavior: UIDynamicBehavior {
     lazy var dropBehavior: UIDynamicItemBehavior = {
         let lazyCreatedDropBehavior = UIDynamicItemBehavior()
         lazyCreatedDropBehavior.allowsRotation = true
-        lazyCreatedDropBehavior.elasticity = CGFloat(NSUserDefaults.standardUserDefaults().doubleForKey("BouncerBehavior.Elasticity"))
-        //println(lazyCreatedDropBehavior.elasticity)
+        let elasticity = CGFloat(NSUserDefaults.standardUserDefaults().floatForKey("BouncerBehavior.Elasticity"))
+        if elasticity != 0 {
+            lazyCreatedDropBehavior.elasticity = elasticity
+        } else {
+            lazyCreatedDropBehavior.elasticity = 0.95
+        }
         lazyCreatedDropBehavior.friction = 0
         lazyCreatedDropBehavior.resistance = 0
         //(should really remove observer...like Trax) see Settings.bundle - Root.plist

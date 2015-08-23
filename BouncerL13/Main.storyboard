@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VDa-lc-g3f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VDa-lc-g3f">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -85,9 +85,9 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="9Y3-BM-fVx"/>
+                                        <exclude reference="ESb-pU-809"/>
                                         <exclude reference="Xsv-uy-cHe"/>
                                         <exclude reference="Zb4-gE-9bo"/>
-                                        <exclude reference="ESb-pU-809"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -103,17 +103,17 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="oEd-wV-LBA"/>
-                                        <exclude reference="kqk-NM-xsY"/>
-                                        <exclude reference="NvD-JK-954"/>
                                         <exclude reference="HmP-v9-uvN"/>
+                                        <exclude reference="NvD-JK-954"/>
+                                        <exclude reference="kqk-NM-xsY"/>
+                                        <exclude reference="oEd-wV-LBA"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="136" width="165" height="165"/>
                                     <mask key="constraints">
-                                        <exclude reference="hgi-8l-dV2"/>
                                         <exclude reference="YOr-mk-7dk"/>
+                                        <exclude reference="hgi-8l-dV2"/>
                                         <include reference="oEd-wV-LBA"/>
                                     </mask>
                                 </variation>
@@ -134,9 +134,9 @@
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="MFz-qz-c98"/>
-                                        <exclude reference="ATa-qH-MN2"/>
                                         <exclude reference="1or-lE-OCW"/>
+                                        <exclude reference="ATa-qH-MN2"/>
+                                        <exclude reference="MFz-qz-c98"/>
                                     </mask>
                                 </variation>
                             </textView>
@@ -155,13 +155,13 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="YBz-PA-3mX"/>
-                                        <exclude reference="E4H-g4-oAy"/>
                                         <exclude reference="1Zr-nc-QZR"/>
-                                        <exclude reference="n7P-jh-vQl"/>
-                                        <exclude reference="YEO-qL-J7z"/>
-                                        <exclude reference="vPF-k3-StO"/>
                                         <exclude reference="9rC-zS-rM9"/>
+                                        <exclude reference="E4H-g4-oAy"/>
+                                        <exclude reference="YBz-PA-3mX"/>
+                                        <exclude reference="YEO-qL-J7z"/>
+                                        <exclude reference="n7P-jh-vQl"/>
+                                        <exclude reference="vPF-k3-StO"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
@@ -182,8 +182,8 @@
                                     <mask key="constraints">
                                         <exclude reference="0Bw-xp-Ipn"/>
                                         <exclude reference="Hg0-4d-YhN"/>
-                                        <exclude reference="nQq-nY-VMr"/>
                                         <exclude reference="J6x-Mk-nlQ"/>
+                                        <exclude reference="nQq-nY-VMr"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -200,11 +200,11 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="6JH-eZ-nck"/>
-                                        <exclude reference="vQU-tU-SOg"/>
-                                        <exclude reference="jfK-EU-TJf"/>
                                         <exclude reference="Uqs-Xd-O6j"/>
-                                        <exclude reference="m09-gy-F75"/>
                                         <exclude reference="hzH-CP-qI6"/>
+                                        <exclude reference="jfK-EU-TJf"/>
+                                        <exclude reference="m09-gy-F75"/>
+                                        <exclude reference="vQU-tU-SOg"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -249,11 +249,11 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="pL3-yh-Pv6"/>
                                         <exclude reference="CI9-ct-X7g"/>
-                                        <exclude reference="hMw-qv-tuo"/>
-                                        <exclude reference="dPy-BU-8ND"/>
                                         <exclude reference="EOE-Bg-l1k"/>
+                                        <exclude reference="dPy-BU-8ND"/>
+                                        <exclude reference="hMw-qv-tuo"/>
+                                        <exclude reference="pL3-yh-Pv6"/>
                                     </mask>
                                 </variation>
                             </imageView>
