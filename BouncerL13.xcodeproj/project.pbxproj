@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		71A6E2E51B891B5A000AA949 /* Hillsong - Greater than All - with subtitles_lyrics.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 71A6E2E41B89194D000AA949 /* Hillsong - Greater than All - with subtitles_lyrics.mp4 */; };
+		715FA4A21B978C9700203CE1 /* Hillsong - Greater than All - with subtitles_lyrics.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 71A6E2E41B89194D000AA949 /* Hillsong - Greater than All - with subtitles_lyrics.mp4 */; };
+		715FA4A41B978F0E00203CE1 /* Hillsong UNITED Oceans (Where Feet May Fail) Lyric Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 715FA4A31B978EF300203CE1 /* Hillsong UNITED Oceans (Where Feet May Fail) Lyric Video.mp4 */; };
 		885F89051B0BA085009C82EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885F89041B0BA085009C82EB /* Images.xcassets */; };
 		885F89141B0BA085009C82EB /* BouncerL13Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F89131B0BA085009C82EB /* BouncerL13Tests.swift */; };
 		885F891E1B0BA39B009C82EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F891D1B0BA39B009C82EB /* AppDelegate.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		715FA4A31B978EF300203CE1 /* Hillsong UNITED Oceans (Where Feet May Fail) Lyric Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hillsong UNITED Oceans (Where Feet May Fail) Lyric Video.mp4"; sourceTree = "<group>"; };
 		71A6E2E41B89194D000AA949 /* Hillsong - Greater than All - with subtitles_lyrics.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hillsong - Greater than All - with subtitles_lyrics.mp4"; sourceTree = "<group>"; };
 		885F88F81B0BA085009C82EB /* BouncerL13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BouncerL13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885F88FC1B0BA085009C82EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				889BA0201B0E668D001172AB /* How_to_Get_to_Mars._Very_Cool!_HD.mp4 */,
 				88EBF3021B277BA30090A5A0 /* Matthew_24.mp4 */,
 				88942DB21B40958F00F40BDE /* Phil Wickham - This Is Amazing Grace.mp4 */,
+				715FA4A31B978EF300203CE1 /* Hillsong UNITED Oceans (Where Feet May Fail) Lyric Video.mp4 */,
 				889BA0231B0E7A63001172AB /* Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1.mp4 */,
 			);
 			name = Videos;
@@ -388,7 +391,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71A6E2E51B891B5A000AA949 /* Hillsong - Greater than All - with subtitles_lyrics.mp4 in Resources */,
+				715FA4A41B978F0E00203CE1 /* Hillsong UNITED Oceans (Where Feet May Fail) Lyric Video.mp4 in Resources */,
+				715FA4A21B978C9700203CE1 /* Hillsong - Greater than All - with subtitles_lyrics.mp4 in Resources */,
 				88DCAD401B4451DC0079046A /* padel520.jpg in Resources */,
 				88942DB31B4095A200F40BDE /* Phil Wickham - This Is Amazing Grace.mp4 in Resources */,
 				88DCAD3F1B4451DC0079046A /* paddle1.jpg in Resources */,

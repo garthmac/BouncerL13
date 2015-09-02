@@ -84,7 +84,7 @@
 			<key>KeyboardType</key>
 			<string>Alphabet</string>
 			<key>Title</key>
-			<string>A - G ( eg. C ) </string>
+			<string>A - I ( eg. C ) </string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 		</dict>

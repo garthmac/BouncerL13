@@ -53,6 +53,7 @@ class BouncerViewController: UIViewController {
         case "F": return BouncerViewController.Videos.F
         case "G": return BouncerViewController.Videos.G
         case "H": return BouncerViewController.Videos.H
+        case "I": return BouncerViewController.Videos.I
         default: return BouncerViewController.Videos.C
         }
     }
@@ -101,7 +102,8 @@ class BouncerViewController: UIViewController {
             E = "How_to_Get_to_Mars._Very_Cool!_HD",
             F = "Matthew_24",
             G = "Phil Wickham - This Is Amazing Grace",
-            H = "Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1"
+            H = "Hillsong UNITED Oceans (Where Feet May Fail) Lyric Video",
+            I = "Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1"
     }
     private var redBlock: UIButton?
     lazy var blockColor: UIColor = {
@@ -210,7 +212,7 @@ class BouncerViewController: UIViewController {
 
 private extension String {
     static var random: String {
-        switch arc4random() % 9 {
+        switch arc4random() % 10 {
         case 0: return "A"
         case 1: return "B"
         case 2: return "C"
@@ -219,6 +221,7 @@ private extension String {
         case 5: return "F"
         case 6: return "G"
         case 7: return "H"
+        case 8: return "I"
         default: return "C"
         }
     }
