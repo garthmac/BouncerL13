@@ -41,10 +41,10 @@ class BouncerViewController: UIViewController {
         if alpha != 0.0 {
             return CGFloat(alpha)
         }
-        return 1.0
+        return 0.5
         }()
     func videoNameFor(sel: String) -> String {
-        switch String(Array(sel).first!) {
+        switch String(Array(sel.characters).first!) {
         case "A": return BouncerViewController.Videos.A
         case "B": return BouncerViewController.Videos.B
         case "C": return BouncerViewController.Videos.C
@@ -63,7 +63,7 @@ class BouncerViewController: UIViewController {
         self.moviePlayer = MPMoviePlayerController(contentURL: url)
         if let player = self.moviePlayer {
             player.view.frame = bouncerView.frame
-            var model = UIDevice.currentDevice().model
+            let model = UIDevice.currentDevice().model
             if model.hasPrefix("iPad") {
                 player.view.frame.size = CGSize(width: 1024, height: 800)
             } else { // midY/2 is a compromize for iPhones
@@ -81,7 +81,7 @@ class BouncerViewController: UIViewController {
             player.play()
             bouncerView.addSubview(player.view)
         } else {
-            debugPrintln("Oops, something went wrong when playing background video")
+            debugPrint("Oops, something went wrong when playing background video")
         }
     }
     struct Constants {
@@ -102,8 +102,8 @@ class BouncerViewController: UIViewController {
             E = "How_to_Get_to_Mars._Very_Cool!_HD",
             F = "Matthew_24",
             G = "Phil Wickham - This Is Amazing Grace",
-            H = "Hillsong UNITED Oceans (Where Feet May Fail) Lyric Video",
-            I = "Blood_Moons_In_Biblical_Prophecy_Incredible_Year_Ahead_In_2015!_Part_1"
+            H = "Hillsong UNITED - Oceans [Passion 2014]",
+            I = "Amazing_Grace_My_Chains_are_Gone_-_Chris_Tomlin_wi"
     }
     private var redBlock: UIButton?
     lazy var blockColor: UIColor = {
@@ -130,7 +130,7 @@ class BouncerViewController: UIViewController {
         if motionMgr.accelerometerAvailable {
             motionMgr.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue()) { (data, error) -> Void in
                 let data = motionMgr.accelerometerData
-                self.bouncer.gravity.gravityDirection = CGVector(dx: data.acceleration.x, dy: -data.acceleration.y)
+                self.bouncer.gravity.gravityDirection = CGVector(dx: data!.acceleration.x, dy: -data!.acceleration.y)
             }
         }
     }
@@ -171,37 +171,36 @@ class BouncerViewController: UIViewController {
     // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == Constants.Credits {
-            if let ivc = segue.destinationViewController as? UIViewController {
-                //prepare
-                for view in ivc.view.subviews as! [UIView] {
-                    if let button = view as? UIButton {
-                        if button.titleForState(.Normal) == "Back" {
-                            button.layer.cornerRadius = 15 //size width is 30
-                            button.setTitle("X", forState: .Normal)
-                            button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-                            button.layer.backgroundColor = UIColor.redColor().CGColor
-                            button.layer.borderColor = UIColor.blackColor().CGColor
-                            button.layer.borderWidth = 2
-                            return
-                        }
+            let ivc = segue.destinationViewController
+            //prepare
+            for view in ivc.view.subviews {
+                if let button = view as? UIButton {
+                    if button.titleForState(.Normal) == "Back" {
+                        button.layer.cornerRadius = 15 //size width is 30
+                        button.setTitle("X", forState: .Normal)
+                        button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+                        button.layer.backgroundColor = UIColor.redColor().CGColor
+                        button.layer.borderColor = UIColor.blackColor().CGColor
+                        button.layer.borderWidth = 2
+                        return
                     }
-                    if let animatedImageView = view as? UIImageView {
-                        if animatedImageView.tag == 111 {
-                            let images = (0...8).map {
-                                UIImage(named: "peanuts-anim\($0).png") as! AnyObject
-                            }
-                            animatedImageView.animationImages = images
-                            animatedImageView.animationDuration = 9.0
-                            //animatedImageView.animationRepeatCount = 0 //0 repeat indefinitely is default
-                            animatedImageView.startAnimating()
+                }
+                if let animatedImageView = view as? UIImageView {
+                    if animatedImageView.tag == 111 {
+                        let images = (0...8).map {
+                            UIImage(named: "peanuts-anim\($0).png")!
                         }
+                        animatedImageView.animationImages = images
+                        animatedImageView.animationDuration = 9.0
+                        //animatedImageView.animationRepeatCount = 0 //0 repeat indefinitely is default
+                        animatedImageView.startAnimating()
                     }
                 }
             }
         }
     }
     func creditsAction(sender: UIButton) {
-        println("Button tapped")
+        print("Button tapped")
         self.performSegueWithIdentifier(Constants.Credits, sender: sender)
     }
     @IBAction func unwindFromModalViewController(segue: UIStoryboardSegue) {

@@ -32,7 +32,7 @@ class BouncerBehavior: UIDynamicBehavior {
     lazy var dropBehavior: UIDynamicItemBehavior = {
         let lazyCreatedDropBehavior = UIDynamicItemBehavior()
         lazyCreatedDropBehavior.allowsRotation = true
-        let elasticity = CGFloat(NSUserDefaults.standardUserDefaults().floatForKey("BouncerBehavior.Elasticity"))
+        let elasticity = CGFloat(NSUserDefaults.standardUserDefaults().doubleForKey("BouncerBehavior.Elasticity"))
         if elasticity != 0 {
             lazyCreatedDropBehavior.elasticity = elasticity
         } else {
