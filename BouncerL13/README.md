@@ -1,4 +1,4 @@
-# BouncerL13 (alias Red Block)
+# BouncerL13 (alias RedBlock Videos)
 
 uses MPMoviePlayerController for 9 videos locally in Landscape only
     - Application does not run in background
