@@ -1,9 +1,9 @@
-# BouncerL13 (alias RedBlock Videos)
+# BouncerL13 (alias RedBlock Fav Video Bouncer)
 
 uses MPMoviePlayerController for 9 videos locally in Landscape only
     - Application does not run in background
 uses Settings.bundle
-    - for FavVideo 
+    - for FavVideo vs. Random selection
     - optional continuous playback 
     - optional random colored block vs alpha red
 
